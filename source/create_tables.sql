@@ -43,9 +43,9 @@ DROP TABLE IF EXISTS Courses; -- This is to make it easy for me to test
 
 -- The table format
 CREATE TABLE Courses (Course_id text DEFAULT 'V-1',
-                       Course_name text DEFAULT 'None',
-					   Instructor text DEFAULT 'None',
-					   PRIMARY KEY (Course_id));
+                      Course_name text DEFAULT 'None',
+					  Instructor text DEFAULT 'None',
+					  PRIMARY KEY (Course_id));
 					   
 SELECT *
 FROM Courses;

@@ -55,7 +55,7 @@ Below is the Enrollment table with 3 fields/parameters:
 
 /*
 Inserting specific values into the Enrollment table to test.
-Assuming we have 2 enrollments per student, let's give them specific fields
+Assuming we have 2 enrollments per student, let's give them specific fields/values
 Ben would take the Math and CSC courses,
 Lucas would take the Math and Phil courses,
 and Jonah would take the CSC and Phil courses.

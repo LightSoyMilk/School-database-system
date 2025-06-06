@@ -1,4 +1,19 @@
-- The main reason to split the data into separate tables is to achieve normalization:
+PART 4:
+1. If I wanted to change a student's email, I would use the UPDATE and SET query 
+in regards to the Students table.
+2. If I wanted to delete a course, I would use the DELETE FROM query in regards to the
+Courses table.
+3. If a student were to drop a class, I would have to remove their enrollment id from the 
+Enrollment table, and also record that student's enrollment and dropping course action in a separate 
+Records table. But this is not possible for me to do yet as I have not learned functional SQL.
+4. The explanation for why this is better than the "one big table" approach can be grouped into 
+part 5's explanation below. But mainly it would avoid having data duplication and actions like updating,
+deleting, enrolling, and dropping classes as above would be much easier to handle when the information
+are in different table, as it would be convoluted if we were to implement the "one big table" approach.
+
+PART 5:
+- The main reason to split the data into separate tables is to achieve normalization - in this case, I 
+would argue that I have achieved the Third Normal Form in terms of normalization:
 + Ensure that each table has relevant information accordingly to the title 
 + There is no dependency for information (i.e the data on courses should exist
 irrespective of students' enrollment since a course can be offered but no students take it)

@@ -1,0 +1,13 @@
+- The main reason to split the data into separate tables is to achieve normalization:
++ Ensure that each table has relevant information accordingly to the title 
++ There is no dependency for information (i.e the data on courses should exist
+irrespective of students' enrollment since a course can be offered but no students take it)
++ Makes it easier to control and update information, when a student drops a course, the information
+about that course is not deleted
+
+- The table connects to each other through foreign keys present in the enrollment table.
+-> This solves the issue of data duplication. As the enrollment table fixes the issue of students 
+enrolling in multiple courses. If we did not have the enrollment table, we would have to connect the 
+courses and students table directly. This would inevitably result in a student, or course information 
+being repeated to accomodate a course having more than 1 student in it, or a student enrolling in 
+more than 1 course. 
